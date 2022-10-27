@@ -1,4 +1,6 @@
-const rides = [
+let rides, activities, characters;
+
+    rides = [
     "Space Mountain",
     "Splash Mountain",
     "The Matterhorn",
@@ -11,7 +13,7 @@ const rides = [
     "Casey Junior Circus Train",
     "The Disneyland Monorail",
     "The Disneyland Railroad",
-    "Dumbo the Flying Element",
+    "Dumbo the Flying Elephant",
     "Finding Nemo Submarine Voyage",
     "Indiana Jones Adventure",
     "it's a small world",
@@ -29,7 +31,7 @@ const rides = [
     "Mr. Toad's Wild Ride"
 ];
 
-const activities = [
+activities = [
 "watch the fireworks",
 "watch Fantasmic!",
 "go to the Fantasy Faire",
@@ -53,7 +55,7 @@ const activities = [
 "look in all the stores"
 ];
 
-const characters = [
+characters = [
 "Mickey Mouse",
 "Minnie Mouse",
 "Donald Duck",
@@ -99,15 +101,23 @@ const characters = [
 "Moana"
 ];
 
-function pickRandomWord(listOfWords) {
-    const randomNum = Math.floor(Math.random() * listOfWords.length);
-    return listOfWords[randomNum]
-};
-
-
-function generateRandomPhrase(params) {
-    return `Ride ${pickRandomWord(rides)}, then ${pickRandomWord(activities)} with ${pickRandomWord(characters)}.`
+function randGen(){
+    return 
+Math.floor(Math.random() * 3);
 }
 
-console.log(generateRandomPhrase())
+function sentence() {
+    var rand1 =
+Math.floor(Math.random() * rides.length);
+    var  rand2 =
+Math.floor(Math.random() * activities.length) ;
+    var rand3 =
+Math.floor(Math.random() * characters.length);
+
+
+    var content = "Ride " + rides[rand1] + ", then " + activities[rand2] + " with " + characters[rand3] + ".";
+    document.getElementById('sentence').innerHTML = "&quot;" + content + "&quot;"
+};
+    sentence();
+
 

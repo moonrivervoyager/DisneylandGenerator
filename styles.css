@@ -1,0 +1,49 @@
+body{
+text-align: center; 
+background-color: pink;
+background-image: url(aubrey-odom-mabey-b29yE3r7daw-unsplash.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+height: fit-content;
+}
+h1{
+    font-family: "Grand Hotel", cursive;
+    color:deeppink;
+    
+}
+#container{
+ height: 200px;
+display: flex;
+ background-color: white;
+ padding: 10px;
+ border: 1px solid pink;
+ align-items: center;
+justify-content: center;
+opacity: 0.8;
+   
+}
+
+#container p {
+    justify-content: center; 
+}
+   
+
+button {
+    margin: 50px auto;
+    justify-content: right;
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    background-color:lavender;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .container, p {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+

@@ -22,7 +22,7 @@ const rides = [
     "Peter Pan's Flight",
     "Pinocchio's Daring Journey",
     "Snow White's Enchanted Wish",
-    "Star Tour - The Adventures Continue",
+    "Star Tours - The Adventures Continue",
     "Star Wars: Rise of the Resistance",
     "Storybook Land Canal Boats",
     "Millenium Falcon: Smugglers Run",
