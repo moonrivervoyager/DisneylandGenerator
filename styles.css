@@ -26,6 +26,8 @@ opacity: 0.8;
 
 #container p {
     justify-content: center; 
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
 }
    
 
